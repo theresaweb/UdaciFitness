@@ -1,17 +1,18 @@
 import React from 'react'
-import { View } from 'react-native'
-import AddEntry from './components/AddEntry'
+import { View, Text } from 'react-native'
+import Tabs from './components/Tabs'
 import { createStore } from 'redux'
 import { Provider } from 'react-redux'
 import reducer from './reducers'
-import History from './components/History'
+
+
 
 export default class App extends React.Component {
   render() {
     return (
       <Provider store={createStore(reducer)}>
         <View style={{flex: 1}}>
-           <History />
+           <Tabs />
         </View>
       </Provider>
     );
