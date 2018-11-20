@@ -2,6 +2,7 @@ import React from 'react';
 import { createBottomTabNavigator, createAppContainer } from 'react-navigation';
 import History from './History'
 import AddEntry from './AddEntry'
+import Live from './Live'
 import { Platform } from 'react-native'
 import { purple, white } from '../utils/colors'
 import { FontAwesome, Ionicons } from '@expo/vector-icons'
@@ -21,6 +22,13 @@ const Tabs = createBottomTabNavigator(
         tabBarLabel: 'Add Entry',
         tabBarIcon: ({ tintColor }) => <FontAwesome name='plus-square' size={30} color={tintColor} />
       },
+    },
+    Live: {
+      screen: Live,
+      navigationOptions: {
+        tabBarIcon: ({ tintColor }) => <Ionicons name='ios-speedometer' size={30} color={tintColor} />
+
+      }
     }
   },{
     navigationOptions: {
