@@ -1,6 +1,7 @@
 import React from 'react'
 import { View, StatusBar } from 'react-native'
 import Tabs from './components/Tabs'
+import MainNavigator from './components/MainNavigator'
 import { createStore } from 'redux'
 import { Provider } from 'react-redux'
 import reducer from './reducers'
@@ -20,7 +21,7 @@ export default class App extends React.Component {
       <Provider store={createStore(reducer)}>
         <View style={{flex: 1}}>
            <UdaciStatusBar backgroundColor={purple} barStyle="light-content" />
-           <Tabs />
+           <MainNavigator />
         </View>
       </Provider>
     );
