@@ -9,12 +9,14 @@
     "eject": "expo eject"
   },
   "dependencies": {
-    "expo": "^31.0.2",
+    "expo": "^1.0.0",
+    "fsevents": "^1.2.4",
     "react": "^16.5.0",
     "react-native": "https://github.com/expo/react-native/archive/sdk-31.0.0.tar.gz",
     "react-navigation": "^3.0.0",
     "react-redux": "^5.1.1",
     "redux": "^4.0.1",
+    "ua-parser-js": "^0.7.28",
     "udacifitness-calendar": "^11.0.0"
   },
   "devDependencies": {

@@ -106,7 +106,6 @@ render() {
       const { getIcon, type, ...rest } = metaInfo[key]
       const value = this.state[key]
        return (
-
         <View key={key} style={styles.row}>
           {getIcon()}
           {type === 'slider'
